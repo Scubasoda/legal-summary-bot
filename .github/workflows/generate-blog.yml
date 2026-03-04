@@ -3,7 +3,7 @@ name: Generate Legal Blog Post
 on:
   schedule:
     # Run every 21 days at 9:00 AM UTC
-    - cron: '0 9 */21 * *'
+    - cron: '0 9 */7 * *'
   
   # Allow manual trigger
   workflow_dispatch:
