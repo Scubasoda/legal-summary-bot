@@ -14,7 +14,9 @@ from mistralai import Mistral
 
 # Configuration
 MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
-BLOG_DATA_FILE = "src/data/blogPosts.json"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+# Set path relative to the script's location, ensuring it works in GitHub Actions
+BLOG_DATA_FILE = os.path.join(os.path.dirname(SCRIPT_DIR), "src", "data", "blogPosts.json")
 
 # Case law sources - rotates through these
 CASE_LAW_SOURCES = [
@@ -58,6 +60,8 @@ def load_existing_posts():
 
 def save_posts(posts):
     """Save blog posts to JSON file."""
+    # Ensure directory exists
+    os.makedirs(os.path.dirname(BLOG_DATA_FILE), exist_ok=True)
     with open(BLOG_DATA_FILE, 'w') as f:
         json.dump(posts, f, indent=2)
 
