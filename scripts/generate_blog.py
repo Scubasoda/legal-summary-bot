@@ -114,14 +114,26 @@ Date: {case['published']}
 Summary: {case['summary'][:2000] if case['summary'] else 'See full judgment'}
 
 Your blog post should:
-1. Have a compelling, professional title (different from the case title)
-2. Include an engaging introduction explaining the case's significance
-3. Summarize the key facts and legal issues
-4. Explain the court's decision and reasoning
-5. Discuss the practical implications for clients and legal practitioners
-6. Be written in a clear, accessible style suitable for both legal professionals and informed lay clients
-7. Be approximately 500-800 words
-8. Use HTML formatting with <h2> for headings and <p> for paragraphs
+be written in perfect British English, with perfect British English spelling and perfect British English grammar and punctuation. 
+Please do not use a dash ("-"), rather use a comma as a form of punctuation.
+Please structure/layout what you write in the best and the most logical way that is possible to ensure what you write flows naturally and logically. 
+Please write in the first person plural (i.e. "we" and "our"). 
+Please use simple prose, writing in plain and simple British English and also to ensure what is written is most accurate. 
+Please write formally and professionally. Make sure what you write does not use Abnormally Perfect Grammar and Syntax; does not use Predictable Word Choice and Sentence Length; does not have a Lack of Personal Experience or Specificity; does not Overuse Certain Transition Words. 
+The insight should be in the most clear and the most certain terms. 
+There should be absolutely no ambiguity. The insight may be used in the future for reference. 
+Please write in full and complete sentences. 
+Please write in full and complete paragraphs. 
+Please ensure there is a space between each paragraph. 
+Please expand on every point as is most appropriate to do. 
+Please write in a way that's clear, concise and focused. 
+This will need to be easily followed by the reader. The style of writing should show that I have been examining, evaluating, and interpreting information or ideas to understand their meaning, strengths, and weaknesses. 
+Demonstrating my understanding of reading/evidence; Showing reasoning and conclusions from my reading/reflections; Showing I understand how different ideas/evidence/perspectives relate to each other; 
+Identifying possible limitations of research/theory and how these relate to my own arguments or own context; 
+Demonstrating an understanding of how theories or research apply in my practice/context; Identifying how something could be interpreted or done differently
+
+Be approximately 500-800 words
+Use HTML formatting with <h2> for headings and <p> for paragraphs
 
 Format your response as JSON with these fields:
 - title: The blog post title (string)
